@@ -1,8 +1,11 @@
 import React from 'react';
 import sampleimage from '../assets/sampleimage.jpg';
+import Navbar from './Navbar';
 
 const Homepage = () => {
   return (
+    <>
+    <Navbar/>
     <div className="bg-white min-h-screen">
       {/* Main Content Section */}
       <div className="flex flex-col items-center max-w-7xl mx-auto p-8">
@@ -130,6 +133,7 @@ const Homepage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
