@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import sampleimage from '../assets/sampleimage.jpg';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Homepage = () => {
   const [blocks, setBlocks] = useState(0);
@@ -194,6 +195,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
