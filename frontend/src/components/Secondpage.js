@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const Secondpage = () => {
@@ -68,6 +69,7 @@ const Secondpage = () => {
         </div>
       </div>
       </div>
+      <Footer/>
       </>
   )
 }

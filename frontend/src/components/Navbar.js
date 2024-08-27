@@ -14,8 +14,9 @@ const Navbar = () => {
          <div className='cursor-pointer' onClick={()=> setNav(!nav)}>
             <AiOutlineMenu size={30}/>
             </div>
+            <div onClick={()=>{navigate("/")}} className='cursor-pointer'  >
          <h1 className='text-xl sm:text-3xl lg:text-4xl px-2 text-green-500'>Hostel<span className='font-bold text-black'> Management</span></h1>
-        
+         </div>
        </div>
        
        
@@ -27,10 +28,10 @@ const Navbar = () => {
         <AiOutlineClose onClick={()=> setNav(!nav)} size={25} className='absolute right-4 top-4 cursor-pointer duration-300 text-slate-400 hover:text-black'/>
         <ul>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaHouseChimneyUser size={25} onClick={()=>{navigate("/secondpage")}} className='mr-4 '/> Our Hostels</li>
-            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaBowlFood  size={25} className='mr-4 '/>Food</li>
+            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaBowlFood  size={25} onClick={()=>{navigate("/displaymenu")}} className='mr-4 '/>Food</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaWallet  size={25} className='mr-4 '/> Payments</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaStar size={25} className='mr-4 '/> Attendance</li>
-            <li className='text-xl py-4 flex ml-4 cursor-pointer'><AiOutlineQuestion size={25} className='mr-4 '/> Contact us</li>
+            <li className='text-xl py-4 flex ml-4 cursor-pointer'><AiOutlineQuestion size={25} onClick={()=>{navigate("/contactus")}} className='mr-4 '/> Contact us</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><AiOutlineArrowUp size={25} className='mr-4 '/> Updates</li>
         </ul>
        </div>
