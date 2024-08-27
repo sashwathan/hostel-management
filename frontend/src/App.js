@@ -2,11 +2,11 @@
 import Homepage from './components/Homepage';
 import './App.css';
 import Secondpage from './components/Secondpage';
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Food from './components/Food';
 import DisplayMenu from './components/DisplayMenu';
 import ContactUs from './components/ContactUs';
+import Faculty from './components/Faculty';
+import Payments from './components/Payments';
 
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
         <Route path='/secondpage' exact element={<Secondpage />}/>
         <Route path='/displaymenu' exact element={<DisplayMenu/>}/>
         <Route path='/contactus' exact element={<ContactUs/>}/>
+        <Route path='/faculty' exact element={<Faculty/>}/>
+        <Route path='/payments' exact element={<Payments/>}/>
 
       </Routes>
        </Router>

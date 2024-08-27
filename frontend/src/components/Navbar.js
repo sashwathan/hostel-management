@@ -29,8 +29,8 @@ const Navbar = () => {
         <ul>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaHouseChimneyUser size={25} onClick={()=>{navigate("/secondpage")}} className='mr-4 '/> Our Hostels</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaBowlFood  size={25} onClick={()=>{navigate("/displaymenu")}} className='mr-4 '/>Food</li>
-            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaWallet  size={25} className='mr-4 '/> Payments</li>
-            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaStar size={25} className='mr-4 '/> Attendance</li>
+            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaWallet  size={25} onClick={()=>{navigate("/payments")}} className='mr-4 '/> Payments</li>
+            <li className='text-xl py-4 flex ml-4 cursor-pointer'><FaStar size={25} onClick={()=>{navigate("/faculty")}} className='mr-4 '/> Faculty</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><AiOutlineQuestion size={25} onClick={()=>{navigate("/contactus")}} className='mr-4 '/> Contact us</li>
             <li className='text-xl py-4 flex ml-4 cursor-pointer'><AiOutlineArrowUp size={25} className='mr-4 '/> Updates</li>
         </ul>
