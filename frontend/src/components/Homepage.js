@@ -142,7 +142,7 @@ const Homepage = () => {
 
           {/* Card 2 */}
           <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start w-full">
-            <div className="w-full lg:w-1/2 text-center lg:text-right lg:ml-6 flex items-center justify-center">
+            <div className="w-full lg:w-1/2 text-center lg:text-left lg:ml-6 flex items-center justify-center">
               <div className="space-y-4">
                 <p className="text-3xl lg:text-5xl font-bold text-gray-700 mb-4">
                   Experience unparalleled comfort <span className="text-green-500">and convenience</span>
