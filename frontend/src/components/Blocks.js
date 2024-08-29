@@ -41,10 +41,18 @@ const Blocks = () => {
         <div className="flex flex-col lg:flex-row flex-grow mx-auto p-8 gap-8 w-full max-w-7xl">
           <div className="lg:w-2/3 flex flex-col justify-between">
             <Tabs activeTab={activeTab} scrollToSection={scrollToSection} />
-            <Occupancy ref={occupancyRef} />
-            <Amenities ref={amenitiesRef} />
-            <Services ref={servicesRef} />
-            <Rules ref={rulesRef} />
+            <div className="mb-12">
+              <Occupancy ref={occupancyRef} />
+            </div>
+            <div className="mb-12">
+              <Amenities ref={amenitiesRef} />
+            </div>
+            <div className="mb-12">
+              <Services ref={servicesRef} />
+            </div>
+            <div className="mb-12">
+              <Rules ref={rulesRef} />
+            </div>
           </div>
           <div className="xl flex flex-col ">
             <Booking />
