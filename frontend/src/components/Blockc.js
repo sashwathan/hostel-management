@@ -4,9 +4,8 @@ import sampleimage2 from '../assets/ablock2.jpeg'; // Sample image 2
 import sampleimage3 from '../assets/ablock3.jpg'; // Sample image 3
 import Navbar from './Navbar';
 import Footer from './Footer';
-
-const Blocks = () => {
-  const images = [sampleimage2, sampleimage1, sampleimage3]; // Array of images
+const Blockc = () => {
+    const images = [sampleimage2, sampleimage1, sampleimage3]; // Array of images
   const [currentIndex, setCurrentIndex] = useState(0); // State to manage current image index
 
   const handleNextImage = () => {
@@ -14,7 +13,6 @@ const Blocks = () => {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
-
   const handlePrevImage = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -38,8 +36,8 @@ const Blocks = () => {
   return (
     <>
     <Navbar/>
-      <h1 className='text-green-500 text-4xl text-center mb-8'>
-        A-<span className='text-black font-bold'>Block</span>
+      <h1 className='text-green-500 text-4xl text-center mb-8 '>
+        C-<span className='text-black font-bold'>Block</span>
       </h1>
       <div className="flex flex-col items-center max-w-7xl mx-auto p-8">
         {/* Image Carousel Section */}
@@ -268,4 +266,4 @@ const Blocks = () => {
   );
 };
 
-export default Blocks;
+export default Blockc
