@@ -10,7 +10,7 @@ const Services = React.forwardRef((props, ref) => (
           alt="Hot Meals icon"
           className="w-6 h-6 mr-2"
         />
-        Hot and Delicious Meals
+        {props.msg}
       </div>
       <div className="bg-gray-100 px-4 py-2 rounded-full shadow-md text-sm flex items-center">
         <img

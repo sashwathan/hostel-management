@@ -48,7 +48,7 @@ const Blocks = () => {
               <Amenities ref={amenitiesRef} />
             </div>
             <div className="mb-12">
-              <Services ref={servicesRef} />
+              <Services ref={servicesRef} msg={'fried rice'} />
             </div>
             <div className="mb-12">
               <Rules ref={rulesRef} />
