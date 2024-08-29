@@ -8,6 +8,7 @@ import ContactUs from './components/ContactUs';
 import Faculty from './components/Faculty';
 import Payments from './components/Payments';
 import Blocks from './components/Blocks';
+import Booking from './components/Booking';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path='/faculty' exact element={<Faculty/>}/>
         <Route path='/payments' exact element={<Payments/>}/>
         <Route path='/blocks' exact element={<Blocks/>}/>
+        <Route path='/booking' exact element={<Booking/>}/>
+
 
       </Routes>
        </Router>

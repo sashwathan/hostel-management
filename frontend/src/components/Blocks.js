@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import sampleimage1 from '../assets/ablock1.jpeg'; // Sample image 1
 import sampleimage2 from '../assets/ablock2.jpeg'; // Sample image 2
 import sampleimage3 from '../assets/ablock3.jpg'; // Sample image 3
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Blocks = () => {
   const images = [sampleimage2, sampleimage1, sampleimage3]; // Array of images
@@ -35,6 +37,7 @@ const Blocks = () => {
 
   return (
     <>
+    <Navbar/>
       <h1 className='text-green-500 text-4xl text-center mb-8'>
         A-<span className='text-black font-bold'>Block</span>
       </h1>
@@ -260,6 +263,7 @@ const Blocks = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
