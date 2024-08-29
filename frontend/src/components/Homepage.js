@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import sampleimage from '../assets/sampleimage.jpg';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
+
 
 const Homepage = () => {
   const [blocks, setBlocks] = useState(0);
   const [rooms, setRooms] = useState(0);
   const [beds, setBeds] = useState(0);
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     // Function to animate the numbers
@@ -134,7 +138,7 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43210</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 50</p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              <button onClick={()=>{navigate("/blocks")}} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
                 More Info
               </button>
             </div>
@@ -161,7 +165,7 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43211</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 45</p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              <button onClick={()=>{navigate("/blocks")}} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
                 More Info
               </button>
             </div>
@@ -188,7 +192,7 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43212</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 60</p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={()=>{navigate("/blocks")}}>
                 More Info
               </button>
             </div>
