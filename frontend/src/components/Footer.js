@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Hostel Management</h3>
           </div>
@@ -36,9 +36,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 flex justify-between items-center">
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">© 2024 | All Rights Reserved by Hostel Management | Sitemap</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mt-4 md:mt-0">
             <FaFacebookF className="text-white hover:text-green-500 cursor-pointer" />
             <FaLinkedinIn className="text-white hover:text-green-500 cursor-pointer" />
             <FaInstagram className="text-white hover:text-green-500 cursor-pointer" />
