@@ -4,13 +4,11 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
 
-
 const Homepage = () => {
   const [blocks, setBlocks] = useState(0);
   const [rooms, setRooms] = useState(0);
   const [beds, setBeds] = useState(0);
   const navigate = useNavigate();
-
 
   useEffect(() => {
     // Function to animate the numbers
@@ -32,6 +30,12 @@ const Homepage = () => {
     animateCounter(setRooms, 100, 1000); // 100+ Rooms in 2 seconds
     animateCounter(setBeds, 100, 1000); // 100+ Beds in 2 seconds
   }, []);
+
+  // Function to handle navigation and scroll to top
+  const handleNavigation = (path) => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+    navigate(path); // Navigate to the desired path
+  };
 
   return (
     <>
@@ -138,7 +142,7 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43210</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 50</p>
               </div>
-              <button onClick={()=>{navigate("/blocks")}} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              <button onClick={() => handleNavigation("/blocks")} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
                 More Info
               </button>
             </div>
@@ -165,7 +169,7 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43211</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 45</p>
               </div>
-              <button onClick={()=>{navigate("/blockb")}} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+              <button onClick={() => handleNavigation("/blockb")} className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
                 More Info
               </button>
             </div>
@@ -192,14 +196,14 @@ const Homepage = () => {
                 <p className="text-sm font-medium text-gray-600">Phone: +91 98765 43212</p>
                 <p className="text-sm font-medium text-gray-600">Total Rooms: 60</p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={()=>{navigate("/blockc")}}>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={() => handleNavigation("/blockc")}>
                 More Info
               </button>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
