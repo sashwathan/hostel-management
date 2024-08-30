@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = React.forwardRef((props, ref) => (
+const Services = React.forwardRef((props,ref) => (
   <div className="mb-8" ref={ref}>
     <h2 className="text-2xl font-semibold mb-4">Services</h2>
     <div className="flex flex-wrap gap-4">

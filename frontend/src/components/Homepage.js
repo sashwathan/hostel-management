@@ -26,7 +26,7 @@ const Homepage = () => {
     };
 
     // Start animations
-    animateCounter(setBlocks, 3, 10000); // 3-Blocks in 2 seconds
+    animateCounter(setBlocks, 3, 20000); // 3-Blocks in 2 seconds
     animateCounter(setRooms, 100, 1000); // 100+ Rooms in 2 seconds
     animateCounter(setBeds, 100, 1000); // 100+ Beds in 2 seconds
   }, []);
