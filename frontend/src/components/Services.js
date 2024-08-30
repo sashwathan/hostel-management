@@ -35,6 +35,7 @@ const Services = React.forwardRef((props,ref) => (
           className="w-6 h-6 mr-2"
         />
         24/7 Security
+        
       </div>      
     </div>
   </div>

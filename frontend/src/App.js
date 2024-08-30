@@ -28,14 +28,13 @@ function App() {
         <Route path='/blockc' exact element={<Blockc/>}/>
         <Route path='/booking' exact element={<Booking/>}/>
       </Routes>
-       </Router>
+      </Router>
   );
   return (
     <div className="App">
       <div>
       {routes}
-    </div>
-    
+    </div>    
     </div>
   );
 }

@@ -12,7 +12,7 @@ const Occupancy = React.forwardRef((props, ref) => (
               alt="Double Occupancy icon"
               className="w-6 h-6 mr-2"
             />
-            <span className="text-lg font-semibold">x 2</span>
+            <span className="text-lg font-semibold">x2</span>
           </div>
           <h3 className="text-xl font-semibold mb-1">Double Occupancy</h3>
         </div>
@@ -23,7 +23,7 @@ const Occupancy = React.forwardRef((props, ref) => (
               alt="Triple Occupancy icon"
               className="w-6 h-6 mr-2"
             />
-            <span className="text-lg font-semibold">x 3</span>
+            <span className="text-lg font-semibold">x3</span>
           </div>
           <h3 className="text-xl font-semibold mb-1">Triple Occupancy</h3>
         </div>
